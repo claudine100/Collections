@@ -7,7 +7,8 @@ namespace ApplicationC_
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("1. LES COLLECTIONS NON GENERIQUES");
+            Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
             //POUR ARRAYLIST
 
             //ArrayList:La classe ArrayList est une collection 
@@ -85,6 +86,25 @@ namespace ApplicationC_
             foreach (object o in langQueue)  
             {
             Console.WriteLine(o);
+            }
+            Console.WriteLine("2. LES COLLECTIONS GENERIQUES");
+            Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+             Console.WriteLine("\n");
+             //POUR LE LIST
+             //Il s’agit d’un tableau dynamique 
+             //offrant des fonctionnalités similaires 
+             //à celles de la classe non générique ArrayList.
+             Console.WriteLine("POUR LE LIST");
+             Console.WriteLine("-------------");
+
+             List<int> numbers = new List<int>();
+            numbers.Add(10);  
+            numbers.Add(20);  
+            numbers.Add(30);  
+            numbers.Add(40);  
+            foreach (int nbr in numbers)  
+            {
+            Console.WriteLine(nbr); 
             }
 
         }
