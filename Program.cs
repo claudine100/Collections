@@ -54,14 +54,35 @@ namespace ApplicationC_
             Console.WriteLine("\n");
              Console.WriteLine("POUR LE STACK");
              Console.WriteLine("-------------");
-             Stack languages = new Stack();  
+             Stack lang = new Stack();  
 
-            languages.Push("Java");  
-            languages.Push("C#");  
-            languages.Push("Python");  
-            languages.Push("C++");  
+            lang.Push("Java");  
+            lang.Push("C#");  
+            lang.Push("Python");  
+            lang.Push("C++");  
 
-            foreach (object o in languages)  
+            foreach (object o in lang)  
+            {
+            Console.WriteLine(o);
+            }
+            //POUR QUEUE
+            //Il représente une collection d’objets 
+            //FIFO(First In First Out). Lorsque 
+            //vous ajoutez un élément à la liste,
+            // cela s’appelle « Enqueue » ou « Enfiler » 
+            //et lorsque vous supprimez un élément, 
+            //cela s’appelle « Deque » ou « Défiler ».
+            Console.WriteLine("\n");
+             Console.WriteLine("POUR LE QUEUE");
+             Console.WriteLine("-------------");
+             Queue langQueue = new Queue(); 
+
+            langQueue.Enqueue("Java");  
+            langQueue.Enqueue("C#");  
+            langQueue.Enqueue("Python");  
+            langQueue.Enqueue("C++");  
+
+            foreach (object o in langQueue)  
             {
             Console.WriteLine(o);
             }
