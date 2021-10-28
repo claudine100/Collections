@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace ApplicationC_
 {
@@ -23,8 +24,8 @@ namespace ApplicationC_
             numbers.Add(1.9803);  //float
             numbers.Add("one");   //string
             numbers.Add('o');     //char
-                Console.WriteLine("POUR ARRAYLIST");
-             Console.WriteLine("-----------------");
+            Console.WriteLine("POUR ARRAYLIST");
+            Console.WriteLine("-----------------");
             foreach (object nbr in numbers)  //ou  foreach (var nbr in numbers)  
             {  
             Console.Write("{0} ", nbr);
@@ -97,16 +98,32 @@ namespace ApplicationC_
              Console.WriteLine("POUR LE LIST");
              Console.WriteLine("-------------");
 
-             List<int> numbers = new List<int>();
-            numbers.Add(10);  
-            numbers.Add(20);  
-            numbers.Add(30);  
-            numbers.Add(40);  
-            foreach (int nbr in numbers)  
+             List<int> num = new List<int>();
+            num.Add(10);  
+            num.Add(20);  
+            num.Add(30);  
+            num.Add(40);  
+            foreach (int nombr in num)  
             {
-            Console.WriteLine(nbr); 
+            Console.WriteLine(nombr); 
             }
+            //POUR DICTIONARY
+            //Il stocke les données sous forme de paires 
+            //clé-valeur et fournit des fonctionnalités
+            // similaires à celles de la classe non générique Hashtable
+            Console.WriteLine("POUR LE DICTIONARY");
+            Console.WriteLine("-------------");
+            Dictionary<int, string> langDict = new Dictionary<int, string>(); 
+                
+            langDict.Add(1, "Java");  
+            langDict.Add(2, "C#");  
+            langDict.Add(3, "Python");  
+            langDict.Add(4, "C++");  
 
+            foreach (KeyValuePair<int, string> langua in langDict)  
+            {  
+            Console.WriteLine("Clé: {0}, Valeur: {1}", langua.Key, langua.Value);  
+            }
         }
     }
 }
